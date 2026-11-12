@@ -1,0 +1,88 @@
+{
+  "kind": "capture",
+  "channels": [
+    "a",
+    "a"
+  ],
+  "families": {
+    "path": "families.jsonl",
+    "bytes": 3500,
+    "sha256": "d28c07a78c55daa7ff5aeb58c8c83a548dd482a43d6f3a2b4ed6c9b243a71857",
+    "rows": 70
+  },
+  "structural_zero_masks": [],
+  "models": [
+    {
+      "id": "main",
+      "interactions": [
+        [
+          "health"
+        ],
+        [
+          "water"
+        ],
+        [
+          "housing"
+        ]
+      ]
+    },
+    {
+      "id": "pair",
+      "interactions": [
+        [
+          "health"
+        ],
+        [
+          "water"
+        ],
+        [
+          "housing"
+        ],
+        [
+          "health",
+          "water"
+        ]
+      ]
+    },
+    {
+      "id": "saturated",
+      "interactions": [
+        [
+          "health"
+        ],
+        [
+          "water"
+        ],
+        [
+          "housing"
+        ],
+        [
+          "health",
+          "water"
+        ],
+        [
+          "health",
+          "housing"
+        ],
+        [
+          "water",
+          "housing"
+        ],
+        [
+          "health",
+          "water",
+          "housing"
+        ]
+      ]
+    }
+  ],
+  "profile_confidence": "19/20",
+  "sensitivity": {
+    "highest_order_log_interaction": [
+      "-1",
+      "0",
+      "1"
+    ]
+  },
+  "numeric_tolerance": "1/100000000"
+}
